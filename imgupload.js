@@ -35,8 +35,7 @@
                 _self.addClass('disabled');
                 // 加载开始执行回调
                 if (typeof opt.before == 'function') {
-                    var b=opt.before($this);
-                    if(b==false){
+                    if(opt.before($this)===false){
                         return;
                     }
                 }
