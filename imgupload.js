@@ -24,7 +24,7 @@
         var $this = $(this),
             $form = null;
         if (!$form) {
-            $form = $('<form method="post" enctype="multipart/form-data"><input type="file" accept="image/*" name="file"></form>');
+            $form = $('<form method="post" enctype="multipart/form-data"><input type="file" accept="image/gif,image/jpeg,image/jpg,image/png" name="file"></form>');
         }
         $this.click(function(event) {
             var _self=$(this);
